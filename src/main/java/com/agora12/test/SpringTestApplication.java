@@ -12,7 +12,7 @@ import org.springframework.core.io.Resource;
 import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 
 
-@MapperScan(basePackages="com.agora12.test.ex.*")
+@MapperScan(basePackages="com.agora12.test.*")
 @SpringBootApplication
 public class SpringTestApplication {
 
