@@ -14,7 +14,9 @@ public class mybatisReal_estate {
 	@RequestMapping("/mybatis/test01")
 	@ResponseBody
 	public MybatisReal_estate getReal_estate() {
-		MybatisReal_estate mybatisReal_estate = mybatisReal_estateBO.getMybatisReal_estate();
+		MybatisReal_estate mybatisReal_estate = MybatisReal_estateBO.getMybatisReal_estate();
+		
+		return mybatisReal_estate;
 	}
 	
 }
