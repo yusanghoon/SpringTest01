@@ -5,6 +5,6 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface MybatisReal_estateDAO {
 
-	public MybatisReal_estate selectMybatisReal_estate();
+	public MybatisReal_estate selectMybatisReal_estate(@Param("id") int id);
 	
 }

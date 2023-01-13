@@ -11,9 +11,9 @@ public class MybatisReal_estateBO {
 	@Autowired
 	private MybatisReal_estateDAO mybatisReal_estateDAO;
 	
-	public MybatisReal_estate getMybatisReal_estate() {
+	public MybatisReal_estate getMybatisReal_estate(int id) {
 		
-		MybatisReal_estate mybatisReal_estate = mybatisReal_estateDAO.selectMybatisReal_estate();
+		MybatisReal_estate mybatisReal_estate = mybatisReal_estateDAO.selectMybatisReal_estate(int id);
 		
 		return mybatisReal_estate;
 		
