@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.agora12.test.realestate.dao.RealEstateDAO">
+
+	<select id ="selectRealEstate" parameterType="int"
+	resultType="com.agora12.test.realestate.model.Model" >
+	SELECT
+		`id`
+		,`realtorId`
+		,`area`
+		,`type`
+		,`price`
+		,`rentPrice`
+		,`createdAt`
+		,`updatedAt`
+	FROM
+		`Real_estate`
+	WHERE
+		`id` = #{id}
+	</select>
+
+	<select id ="selectRealEstateRent" parameterType="int"
+	resultType="com.agora12.test.realestate.model.Model">
+	SELECT
+		`id`
+		,`realtorId`
+		,`area`
+		,`type`
+		,`price`
+		,`rentPrice`
+		,`createdAt`
+		,`updatedAt`
+	FROM
+		`Real_estate`
+	WHERE
+		<![CDATA[`rentPrice`< #{rentPrice}]]> 
+	</select>
+
+	<select id ="selectRealEstateArea" parameterType="int"
+	resultType="com.agora12.test.realestate.model.Model">
+	SELECT
+		`id`
+		,`realtorId`
+		,`area`
+		,`type`
+		,`price`
+		,`rentPrice`
+		,`createdAt`
+		,`updatedAt`
+	FROM
+		`Real_estate`
+	WHERE
+		<![CDATA[
+		`area`< #{area} 
+		AND `price` < #{price} 
+		]]> 
+	</select>
+	
+</mapper>

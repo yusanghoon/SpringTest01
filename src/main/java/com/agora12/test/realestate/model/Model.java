@@ -1,17 +1,15 @@
-package com.agora12.test.mybatis.model;
+package com.agora12.test.realestate.model;
 
 import java.util.Date;
 
-public class MybatisReal_estate {
+public class Model {
 
 	private int id;
 	private int realtorId;
-	private String address;
-	private int area;
+	private String area;
 	private String type;
-	private int rentPice;
-	private Date createdAt;
-	private Date updatedAt;
+	private int price;
+	private int rentPrice;
 	public int getId() {
 		return id;
 	}
@@ -24,16 +22,10 @@ public class MybatisReal_estate {
 	public void setRealtorId(int realtorId) {
 		this.realtorId = realtorId;
 	}
-	public String getAddress() {
-		return address;
-	}
-	public void setAddress(String address) {
-		this.address = address;
-	}
-	public int getArea() {
+	public String getArea() {
 		return area;
 	}
-	public void setArea(int area) {
+	public void setArea(String area) {
 		this.area = area;
 	}
 	public String getType() {
@@ -42,11 +34,17 @@ public class MybatisReal_estate {
 	public void setType(String type) {
 		this.type = type;
 	}
-	public int getRentPice() {
-		return rentPice;
+	public int getPrice() {
+		return price;
 	}
-	public void setRentPice(int rentPice) {
-		this.rentPice = rentPice;
+	public void setPrice(int price) {
+		this.price = price;
+	}
+	public int getRentPrice() {
+		return rentPrice;
+	}
+	public void setRentPrice(int rentPrice) {
+		this.rentPrice = rentPrice;
 	}
 	public Date getCreatedAt() {
 		return createdAt;
@@ -60,5 +58,7 @@ public class MybatisReal_estate {
 	public void setUpdatedAt(Date updatedAt) {
 		this.updatedAt = updatedAt;
 	}
+	private Date createdAt;
+	private Date updatedAt;
 	
 }
