@@ -36,6 +36,10 @@ public class RealEstateBO {
 		return RealEstateArea;
 	}
 	
+	public int deleteRealEstate(int id) {
+	    return realEstateDAO.deleteRealEstate(id);
+	}
+	
 	
 	
 	

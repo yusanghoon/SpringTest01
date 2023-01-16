@@ -6,10 +6,9 @@ public class Model {
 
 	private int id;
 	private int realtorId;
+	private String address;
 	private String area;
 	private String type;
-	private int price;
-	private int rentPrice;
 	public int getId() {
 		return id;
 	}
@@ -21,6 +20,12 @@ public class Model {
 	}
 	public void setRealtorId(int realtorId) {
 		this.realtorId = realtorId;
+	}
+	public String getAddress() {
+		return address;
+	}
+	public void setAddress(String address) {
+		this.address = address;
 	}
 	public String getArea() {
 		return area;
@@ -58,6 +63,8 @@ public class Model {
 	public void setUpdatedAt(Date updatedAt) {
 		this.updatedAt = updatedAt;
 	}
+	private int price;
+	private int rentPrice;
 	private Date createdAt;
 	private Date updatedAt;
 	

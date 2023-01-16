@@ -16,4 +16,9 @@ public interface RealEstateDAO {
 
 	public List<Model> selectRealEstateArea(@Param("area") int area
 			,@Param("price") int price);
+	
+	public int deleteRealEstate(@Param("id")int id);
+		
+	
 }
+	

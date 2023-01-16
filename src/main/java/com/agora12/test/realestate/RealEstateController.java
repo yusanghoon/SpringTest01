@@ -42,4 +42,19 @@ public class RealEstateController {
 		return RealEstate;
 	}
 	
+	@RequestMapping("4")
+	@ResponseBody
+	public String deleteREalEstate(@RequestParam("id")int id) {
+		int count = realEstateBO.deleteRealEstate(id);
+		return "삭제 : " + count;
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+	
 }
