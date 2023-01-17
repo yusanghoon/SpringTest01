@@ -17,7 +17,7 @@
 	<input type="text" name="profillimage">
 	<label>온도</label> <br>
 	<input type="text" name="temperature">
-	<button type="submit">추가</button>
+	<button type="submit" class="btn btn-primay">추가</button>
 	</form>
 </div>
 
